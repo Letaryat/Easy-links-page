@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+
+    <link href="css/css2.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="css/clipboard.min.js"></script>
+
+    <script src="css/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <title>Hi! - </title>
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="" />
+
+    <meta property="og:description" content="Some guy with a few personal projects. 
+	Learning front-end. B2 / B2+ English speaker. 
+	CSGO / CS2 Scout player." />
+
+    <meta property="og:url" content="https://.pl" />
+
+    <meta property="og:image" content="img/pfp.jpg" />
+
+    <meta property="og:image:secure_url" content="img/pfp.jpg" />
+
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <meta property="og:image:width" content="176" />
+
+    <meta property="og:image:height" content="176" />
+</head>
+
+<body>
+    <main class="main">
+        <div class="general">
+            <img class="test" src="img/pfp.jpg" alt="profile picture" />
+
+            <div class="text">
+                <p>My name is <span></span></p>
+
+                <p>
+                    But my friends call me <br />
+                    <span class="swerando">f<span class="censorship">#!*</span> off</span>
+                    loser <br />
+                    and I think that it is <br />
+                    a very cool nickname!
+                </p>
+
+                <p>You can find my projects on Behance / Github</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <ol>
+                <li>
+                    <a class="configs"><i class="fa-regular fa-file-lines"></i></a>
+
+                    <span class="tooltip">Game Configs</span>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/@"><i class="fa-brands fa-youtube"></i></a>
+
+                    <span class="tooltip">Youtube</span>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://www.tiktok.com/@"><i
+                            class="fa-brands fa-tiktok"></i></a>
+
+                    <span class="tooltip">Tiktok</span>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://discord.gg/"><i class="fa-brands fa-discord"></i></a>
+
+                    <span class="tooltip">Discord</span>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://pierdolnik.eu/"><i class="fa-solid fa-person-rifle"></i></a>
+
+                    <span class="tooltip">CS2 Servers</span>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+
+                    <span class="tooltip">Github</span>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://www.behance.net/"><i class="fa-brands fa-behance"></i></a>
+
+                    <span class="tooltip">Behance</span>
+                </li>
+            </ol>
+        </div>
+    </main>
+
+    <div class="cfg-container">
+        <div class="mobile-close"><i class="fa-solid fa-xmark"></i></div>
+
+        <div class="article-container">
+            <h4>CS2</h4>
+
+            <div class="article">
+                <img src="img/crosshair.gif" />
+
+                <span>
+                    <h5>Crosshair</h5>
+
+                    <p>My recent CS2 Crosshair.</p>
+
+                    <div class="code copy" data-clipboard-text="CSGO-Af3e8-JUP5F-jYEoX-WN9zW-GaGiJ ">
+                        <p>CSGO-Af3e8-JUP5F-jYEoX-WN9zW-GaGiJ</p>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <div class="article-container">
+            <h4>CSGO</h4>
+
+            <div class="article">
+                <img src="img/scrublel.gif" />
+
+                <span>
+                    <h5>ScrubLEL Config</h5>
+
+                    <p>
+                        Blue and red crosshair while walking and other stuff.<br />
+                        Made by
+                        <a target="_blank" href="https://www.youtube.com/channel/UC3ke363ivFjeYZtWsUvQGqA">@ScrubLEL</a>
+                    </p>
+
+                    <a href="" download="">Download</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copied">Copied!</div>
+
+    <script>
+        function cenzura() {
+            let cen = document.querySelector(".censorship");
+            let anim = document.getElementById("anim");
+            let characters = "!@#$%^&*";
+            let result = "";
+
+            for (i = 0; i <= 2; i++) {
+                result += characters.charAt(
+                    Math.floor(Math.random() * characters.length)
+                );
+            }
+
+            cen.innerHTML = result;
+        }
+
+        setInterval(() => {
+            cenzura();
+        }, 2000);
+
+        const cfgbtn = document.querySelector(".configs");
+        const main = document.querySelector(".main");
+        const cfgs = document.querySelector(".cfg-container");
+        const mobile = document.querySelector(".mobile-close");
+
+        function configs() {
+            cfgs.classList.toggle("active");
+            main.classList.toggle("active");
+        }
+
+        cfgbtn.addEventListener("click", configs);
+        mobile.addEventListener("click", configs);
+
+        var clipboard = new ClipboardJS(".copy");
+
+        clipboard.on("success", function (e) {
+            document.querySelector(".copied").classList.add("active");
+            setTimeout(() => {
+                document.querySelector(".copied").classList.remove("active");
+            }, 5000);
+            e.clearSelection();
+        });
+    </script>
+</body>
+
+</html>
